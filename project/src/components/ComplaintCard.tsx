@@ -24,7 +24,7 @@ export default function ComplaintCard({ complaint }: ComplaintCardProps) {
           <div className="h-48 overflow-hidden bg-gray-100">
             <img
               // src={complaint.photos[0]}
-              src={`${import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000'}${complaint.photos[0]}`}
+              src={`${import.meta.env.VITE_BACKEND_URL || 'https://civic-1-p457.onrender.com'}${complaint.photos[0]}`}
               alt={complaint.title}
               className="w-full h-full object-cover"
             />
