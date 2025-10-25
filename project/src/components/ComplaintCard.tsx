@@ -51,6 +51,13 @@ export default function ComplaintCard({ complaint }: ComplaintCardProps) {
             </p>
           )}
 
+
+          {complaint._id && (
+            <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+              {complaint._id}
+            </p>
+          )}
+
           <div className="space-y-2 text-sm text-gray-500">
             <div className="flex items-center">
               <Tag className="w-4 h-4 mr-2 text-orange-500" />

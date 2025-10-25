@@ -161,8 +161,22 @@ export default function ComplaintDetail() {
               </div>
             )}
 
+
+
+
+              {complaint._id && (
+              <div className="mb-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Id</h3>
+                <p className="text-gray-700 leading-relaxed">{complaint._id}</p>
+              </div>
+            )}
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 p-6 bg-gray-50 rounded-lg">
               <div className="space-y-3">
+
+
+               
+
                 <div className="flex items-center text-gray-700">
                   <Tag className="w-5 h-5 mr-3 text-orange-500" />
                   <span className="font-semibold mr-2">Category:</span>
