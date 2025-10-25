@@ -146,7 +146,7 @@ export default function ComplaintDetail() {
                 {complaint.photos.map((photo, index) => (
                   <img
                     key={index}
-                    src={`${import.meta.env.VITE_BACKEND_URL || 'https://civic-1-p457.onrender.com/api'}${photo}`}
+                    src={`${import.meta.env.VITE_BACKEND_URL || 'https://civic-1-p457.onrender.com'}${photo}`}
                     alt={`Evidence ${index + 1}`}
                     className="w-full h-64 object-cover rounded-lg border-2 border-gray-200"
                   />
